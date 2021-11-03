@@ -6,7 +6,9 @@ const AboutPage = () => {
     <div>
       <h1>About me</h1>
       <h2>I do front-end and back-end web development in Go and ReactJS.</h2>
-      <Link to="/contact">Contact</Link>
+      <p>
+        <Link to="/contact">Want to work with me? React out.</Link>
+      </p>
     </div>
   )
 }
