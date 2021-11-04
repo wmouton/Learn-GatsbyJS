@@ -1,10 +1,12 @@
 import React from 'react'
 // import components
+import Header from '../components/header'
 import Footer from '../components/footer'
 
 const ContactPage = () => {
   return (
     <div>
+      <Header />
       <h1>Contact me</h1>
       <h2>The best way to contact me is via l33th@protonmail.ch on twitter</h2>
       <p>
