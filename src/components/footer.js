@@ -1,5 +1,6 @@
 import React from 'react'
 
+// footer functional component
 const Footer = () => {
   return (
     <footer>

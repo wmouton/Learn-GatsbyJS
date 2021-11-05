@@ -2,6 +2,7 @@ import React from 'react'
 // import components
 import Layout from '../components/layout'
 
+// blog page functional component
 const BlogPage = () => {
   return (
     <Layout>
