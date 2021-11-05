@@ -6,15 +6,15 @@ const ContactPage = () => {
   return (
     <Layout>
       <h1>Contact me</h1>
-      <h2>The best way to contact me is via l33th@protonmail.ch on twitter</h2>
+      <h2>The best way to contact me is via l33th@protonmail.ch</h2>
       <p>
-        You can follow me on{' '}
+        You can also contact me via{' '}
         <a
           href="https://twitter.com/l33th_dev"
           target="_blank"
           rel="noreferrer"
         >
-          Twitter
+          Twitter!
         </a>
       </p>
     </Layout>
