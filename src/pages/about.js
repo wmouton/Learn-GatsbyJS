@@ -10,6 +10,13 @@ const AboutPage = () => {
       <h1>About me</h1>
       <h2>I do front-end and back-end web development in Go and ReactJS.</h2>
       <p>
+        see my{' '}
+        <a href="https://github.com/l33th" target="_blank" rel="noreferrer">
+          GitHub
+        </a>{' '}
+        page
+      </p>
+      <p>
         <Link to="/contact">Want to work with me? Reach out.</Link>
       </p>
     </Layout>
