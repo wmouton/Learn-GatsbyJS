@@ -2,6 +2,8 @@ import React from 'react'
 // import components
 import Header from './header'
 import Footer from './footer'
+// import css
+import '../styles/index.css'
 
 const Layout = ({ children }) => {
   return (
