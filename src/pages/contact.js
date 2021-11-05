@@ -2,6 +2,7 @@ import React from 'react'
 // import components
 import Layout from '../components/layout'
 
+// contact page functional components
 const ContactPage = () => {
   return (
     <Layout>

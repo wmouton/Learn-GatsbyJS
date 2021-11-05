@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 // import components
 import Layout from '../components/layout'
 
+// about page functional component
 const AboutPage = () => {
   return (
     <Layout>
