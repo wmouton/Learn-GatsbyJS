@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 // import scss
 import * as headerStyles from './header.module.scss'
 
+// header functional component
 const Header = () => {
   return (
     <header className={headerStyles.header}>
