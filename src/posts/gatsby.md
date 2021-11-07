@@ -1,5 +1,5 @@
 ---
-title: 'Fullstack Development with Gatsby '
+title: 'Fullstack Development with Gatsby'
 date: '2021-11-07'
 ---
 

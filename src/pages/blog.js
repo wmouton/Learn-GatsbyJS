@@ -1,13 +1,39 @@
 import React from 'react'
 // import components
 import Layout from '../components/layout'
+// import from gatsby
+import { graphql, useStaticQuery } from 'gatsby'
 
 // blog page functional component
 const BlogPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              date
+            }
+          }
+        }
+      }
+    }
+  `)
+  
   return (
     <Layout>
       <h1>Blog</h1>
-      <p>Posts will show up here later on.</p>
+      <ol>
+        {data.allMarkdownRemark.edges.map(edge => {
+          return (
+            <li>
+              <h3>{edge.node.frontmatter.title}</h3>
+              <p>{edge.node.frontmatter.date}</p>
+            </li>
+          )
+        })}
+      </ol>
     </Layout>
   )
 }
