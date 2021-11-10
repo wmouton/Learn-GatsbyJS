@@ -2,7 +2,7 @@ import React from 'react'
 // import components
 import Layout from '../components/layout'
 // import from gatsby
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
 // blog page functional component
 const BlogPage = () => {
@@ -15,12 +15,15 @@ const BlogPage = () => {
               title
               date
             }
+            fields {
+              slug
+            }
           }
         }
       }
     }
   `)
-  
+
   return (
     <Layout>
       <h1>Blog</h1>
@@ -28,8 +31,10 @@ const BlogPage = () => {
         {data.allMarkdownRemark.edges.map(edge => {
           return (
             <li>
-              <h3>{edge.node.frontmatter.title}</h3>
-              <p>{edge.node.frontmatter.date}</p>
+              <Link to={`/blog/${edge.node.fields.slug}`}>
+                <h3>{edge.node.frontmatter.title}</h3>
+                <p>{edge.node.frontmatter.date}</p>
+              </Link>
             </li>
           )
         })}
