@@ -23,6 +23,9 @@ const Blog = ({ data }) => {
       <Layout>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <p>{data.markdownRemark.frontmatter.date}</p>
+        <div
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        ></div>
       </Layout>
     </div>
   )
